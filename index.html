@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon To-Do App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Neon Tasks</h1>
+            <p class="subtitle">Your modern task management solution</p>
+        </header>
+
+        <div class="app-container">
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="What needs to be done?">
+                <button id="addTaskBtn">
+                    <i class="fas fa-plus"></i> Add Task
+                </button>
+            </div>
+
+            <div class="task-lists">
+                <div class="task-list pending">
+                    <h2><i class="fas fa-list-ul"></i> Pending Tasks</h2>
+                    <ul id="pendingTasks" class="tasks">
+                        <div class="empty-state">
+                            <i class="fas fa-tasks"></i>
+                            <div>No pending tasks. Add one above!</div>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="task-list completed">
+                    <h2><i class="fas fa-check-circle"></i> Completed Tasks</h2>
+                    <ul id="completedTasks" class="tasks">
+                        <div class="empty-state">
+                            <i class="fas fa-check"></i>
+                            <div>No completed tasks yet.</div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="fab" id="scrollTopBtn" title="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
